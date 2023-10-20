@@ -1,0 +1,34 @@
+{
+  "name": "supplier-admin-backend",
+  "version": "1.0.0",
+  "description": "This is a backend API developed using Node.js and Express.js. It offers CRUD (Create, Read, Update, Delete) operations for efficiently managing supplier records. This API utilizes a MySQL database for data storage.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AhNyi/supplier-admin-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AhNyi/supplier-admin-backend/issues"
+  },
+  "homepage": "https://github.com/AhNyi/supplier-admin-backend#readme",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.431.0",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.6.2",
+    "sequelize": "^6.33.0",
+    "validatorjs": "^3.22.1",
+    "winston": "^3.11.0",
+    "winston-daily-rotate-file": "^4.7.1"
+  }
+}
