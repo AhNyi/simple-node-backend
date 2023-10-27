@@ -21,7 +21,7 @@ module.exports = (sequelize, Sequelize) => {
       supplier_note: {
         allowNull: true,
         type: 'varchar(255)',
-      }
+      },
     },
     {
       paranoid: true,
@@ -30,4 +30,4 @@ module.exports = (sequelize, Sequelize) => {
     },
   );
   return suppliers;
-}
+};

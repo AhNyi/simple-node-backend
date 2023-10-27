@@ -1,5 +1,5 @@
 module.exports = {
-    PREFIX: {
-        IMG_SUPPLIER: 'supplier/',
-    }
-}
+  PREFIX: {
+    IMG_SUPPLIER: 'supplier/',
+  },
+};

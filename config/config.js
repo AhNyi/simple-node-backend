@@ -12,4 +12,4 @@ module.exports = {
     dateStrings: true,
     typeCast: true,
   },
-}
+};

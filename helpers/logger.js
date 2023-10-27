@@ -37,7 +37,11 @@ const logger = createLogger({
       datePattern: 'YYYY-MM-DD',
       maxSize: '1g',
       maxFiles: '7d',
-      format: combine(timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }), levelFilter('error'), logFormat),
+      format: combine(
+        timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
+        levelFilter('error'),
+        logFormat,
+      ),
       handleExceptions: true,
       handleRejections: true,
     }),

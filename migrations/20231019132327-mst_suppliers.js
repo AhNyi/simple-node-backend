@@ -44,5 +44,5 @@ module.exports = {
 
   down: async (queryInterface) => {
     return queryInterface.dropTable('mst_suppliers');
-  }
+  },
 };

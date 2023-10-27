@@ -16,11 +16,11 @@ module.exports = {
       {
         supplier_name: 'Sup-3',
         supplier_note: 'testing three..',
-      }
-    ])
+      },
+    ]);
   },
 
   down: async (queryInterface) => {
     return queryInterface.bulkCreate('mst_suppliers', null, {});
-  }
+  },
 };

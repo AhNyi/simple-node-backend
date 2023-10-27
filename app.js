@@ -5,7 +5,7 @@ const routes = require('./routes/index');
 const path = require('path');
 const app = express();
 
-const CORS_ORIGIN_DOMAIN = "https://example.com,http://localhost:3000";
+const CORS_ORIGIN_DOMAIN = 'https://example.com,http://localhost:3000';
 
 const corsOptions = {
   origin: CORS_ORIGIN_DOMAIN.split(','),
@@ -15,5 +15,8 @@ app.use(cors(corsOptions));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/api', routes);
+
+//for serving static image files for local
+app.use('/public', express.static(path.join(__dirname + '/public')));
 
 module.exports = app;
